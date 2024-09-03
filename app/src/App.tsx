@@ -96,7 +96,7 @@ function App() {
       {confetti && (
         <>
           <Confetti />
-          <div id="you-win">
+          <div id="you-lose">
             <h2>wow u r cool</h2>
             <button onClick={() => window.location.reload()}>reset</button>
           </div>
@@ -105,7 +105,7 @@ function App() {
       {_.every(availableBoxes, (isAvailable) => !isAvailable) && (
         <div id="you-lose">
           <h2>{loseMessages[score as keyof typeof loseMessages]}</h2>
-          <p>score: {_.filter(gameState, _.isNull).length}</p>
+          <p>score: {10 - _.filter(gameState, _.isNull).length}</p>
           <button onClick={() => window.location.reload()}>reset</button>
         </div>
       )}
