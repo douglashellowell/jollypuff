@@ -7,7 +7,7 @@ const AzureFunctionCaller = () => {
   const [response, setResponse] = useState<string | null>(null);
 
   const callFunction = async () => {
-    const response = await axios.get('/HelloWorld');
+    const response = await axios.get('/api/HelloWorld');
     setResponse(response.data);
   };
 
