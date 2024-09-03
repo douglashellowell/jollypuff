@@ -1,0 +1,30 @@
+.rngNum {
+  background: #ffffff;
+  color: rgb(141, 59, 29);
+  font-weight: 900;
+  font-size: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  margin: 1rem 0;
+  border-radius: 5px;
+}
+
+.rngNum p {
+  &:contains('1') {
+    content: '♠ A';
+  }
+}
+
+.rngNum-1 p {
+  font-weight: 100;
+}
+
+.rngNum-100 {
+  color: goldenrod;
+}
+
+.rngNum-0 {
+  color: transparent;
+}
