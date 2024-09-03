@@ -20,7 +20,7 @@ const loseMessages = {
   6: 'not good',
   7: 'bad',
   8: 'try a different game',
-  9: 'You are a disappointment',
+  9: 'you are doing it wrong',
 };
 
 function App() {
