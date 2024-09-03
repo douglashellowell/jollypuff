@@ -1,13 +1,13 @@
 import axios from 'axios';
 import { useState } from 'react';
 
-const baseUrl = 'https://salmon-mushroom-0fa83ac0f.azurewebsites.net/api/';
+// const baseUrl = 'https://salmon-mushroom-0fa83ac0f.5.azurestaticapps.net/api/';
 
 const AzureFunctionCaller = () => {
   const [response, setResponse] = useState<string | null>(null);
 
   const callFunction = async () => {
-    const response = await axios.get(`${baseUrl}HelloWorld`);
+    const response = await axios.get('/HelloWorld');
     setResponse(response.data);
   };
 
