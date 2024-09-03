@@ -5,6 +5,7 @@ import { DndContext, DragEndEvent } from '@dnd-kit/core';
 import Box from './components/Box';
 import RandomisedNumber from './components/RandomisedNumber';
 import Confetti from 'react-confetti';
+import AzureFunctionCaller from './components/AzureFunctionCaller';
 
 const MIN_NUMBER = 1;
 const MAX_NUMBER = 100;
@@ -91,6 +92,7 @@ function App() {
 
   return (
     <DndContext onDragEnd={onDragEnd}>
+      <AzureFunctionCaller />
       {confetti && (
         <>
           <Confetti />
