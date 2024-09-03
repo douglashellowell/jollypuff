@@ -79,7 +79,7 @@ function App() {
   };
 
   useEffect(() => {
-    if (_.every(gameState, !_.isNull)) {
+    if (_.every(gameState, (box) => typeof box === 'number')) {
       setConfetti(true);
     }
   }, [gameState]);
@@ -100,7 +100,7 @@ function App() {
           </div>
         </>
       )}
-      {_.every(availableBoxes, (value) => !value) && (
+      {_.every(availableBoxes, (isAvailable) => !isAvailable) && (
         <div id="you-lose">
           <h2>{loseMessages[score as keyof typeof loseMessages]}</h2>
           <p>score: {_.filter(gameState, _.isNull).length}</p>
