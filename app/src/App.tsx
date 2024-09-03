@@ -92,7 +92,6 @@ function App() {
 
   return (
     <DndContext onDragEnd={onDragEnd}>
-      <AzureFunctionCaller />
       {confetti && (
         <>
           <Confetti />
@@ -146,7 +145,8 @@ function App() {
             <li>get random number</li>
             <li>drag or click</li>
             <li>try to fill all boxes in numerical order</li>
-          </ul> */}
+            </ul> */}
+          <AzureFunctionCaller />
         </section>
       </main>
     </DndContext>

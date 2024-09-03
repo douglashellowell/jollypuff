@@ -13,7 +13,7 @@ const AzureFunctionCaller = () => {
 
   return (
     <div>
-      <button onClick={callFunction}>Call Function</button>
+      <button onClick={callFunction}>🔮</button>
       <p>{JSON.stringify(response)}</p>
     </div>
   );
