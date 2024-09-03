@@ -31,7 +31,7 @@ function App() {
     _.times<null | number>(BOX_COUNT, () => null)
   );
   const [availableBoxes, setAvailableBoxes] = useState<boolean[]>(
-    _.times(BOX_COUNT, () => false)
+    _.times(BOX_COUNT, () => true)
   );
   const [isButtonDisabled, setIsButtonDisabled] = useState(false);
   const [confetti, setConfetti] = useState(false);
