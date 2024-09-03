@@ -16,7 +16,7 @@ const Box = ({
   const { isOver, setNodeRef } = useDroppable({
     id: makeBoxId(index),
     data: { index },
-    disabled: true,
+    disabled: !isDroppable,
   });
   const style = {
     color: isOver ? 'green' : undefined,
