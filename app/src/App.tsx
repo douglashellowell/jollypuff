@@ -62,6 +62,7 @@ function App() {
     const newGameState = [...gameState];
     newGameState[index] = randomisedNumber;
     setGameState(newGameState);
+    setAvailableBoxes(availableBoxes.map((_, i) => i === index));
     setIsButtonDisabled(false);
   };
 
